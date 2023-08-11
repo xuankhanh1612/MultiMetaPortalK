@@ -1,0 +1,20 @@
+.select-option {
+    position: relative;
+    .select-option-button{
+      min-width: 40px;
+      width: 100%;
+      &.disabled{
+        @apply text-gray-500 pointer-events-none;
+      }
+    }
+    .select-option-popover {
+      @apply shadow;
+      position: absolute;
+      top: 38px;
+      right: 0;
+      background-color: white;
+      min-width: 150px;
+      z-index: 9;
+      border-radius: 5px;
+    }
+  }

@@ -1,0 +1,6 @@
+export const ACTION_TYPES = {
+  SET_AUTH: Symbol("SET_AUTH"),
+  CLEAR_CACHES: Symbol("CLEAR_CACHES"),
+  GET_WEBSITE_BY_DOMAIN: Symbol("GET_WEBSITE_BY_DOMAIN"),
+  UPDATE_CART: Symbol("UPDATE_CART"),
+};

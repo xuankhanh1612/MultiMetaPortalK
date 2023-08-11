@@ -1,0 +1,32 @@
+.date-range-picker {
+  @apply bg-white border border-gray-300 rounded-md shadow-sm inline-flex justify-center text-sm text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  min-height: 37px;
+  @media (max-width: 1023px) {
+    justify-content: flex-start !important;
+  }
+  .date-picker {
+    position: absolute;
+    display: none;
+    &.active {
+      @apply shadow;
+      border-radius: 0.5rem;
+      display: inline-flex;
+      z-index: 99;
+      top: 38px;
+    }
+  }
+  button {
+    min-height: 19px;
+  }
+  .close-wrapper {
+    cursor: pointer;
+    .close {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

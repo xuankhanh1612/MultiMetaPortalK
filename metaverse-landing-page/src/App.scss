@@ -1,0 +1,46 @@
+@import "./modules/common/assets/css/style.scss";
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+
+.avatar-dropdown-position {
+  @apply z-10 mx-3 absolute right-0 left-0 mt-1 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-200;
+  top: 60px;
+}
+.btn-custom {
+  @apply inline-block  py-2 px-4 border border-transparent shadow-sm text-sm font-medium text-white text-center;
+  border-radius: 20px;
+  background-color: #6700ff;
+  &:hover {
+    background-color: darken(#6700ff, 20%);
+  }
+  &:focus {
+    @apply outline-none ring-indigo-500 ring-offset-2 ring-2;
+  }
+  min-width: 100px;
+}
+
+.wrap-icon-action {
+  @apply inline-flex items-center px-2 py-2 border text-xs font-medium rounded-full shadow-sm focus:outline-none;
+  cursor: pointer;
+  color: $color-theme;
+  border-color: $color-theme;
+  &:hover {
+    background-color: $color-theme;
+    color: white;
+  }
+}
+.btn-outline-custom {
+  @apply bg-white py-2 px-4 border  shadow-sm text-sm font-medium;
+  border-radius: 20px;
+  display: inline-block;
+  min-width: 100px;
+  text-align: center;
+  border-color: $color-theme;
+  color: $color-theme;
+  &:hover {
+    @apply text-white;
+    background-color: $color-theme;
+  }
+  &:focus {
+    @apply outline-none;
+  }
+}
